@@ -100,11 +100,15 @@ function getPasswordOptions() {
     generatePassword()
     return
   }
-
+// uppercase charachters
   var upperCase = confirm('Do you want uppercase charcters?')
+// Lowercase charchters
   var lowerCase = confirm('Do you want lowercase charcters?')
+// numbers
   var numbers = confirm('Do you want numbers?')
+// special characters
   var special = confirm('Do you want special charcters?')
+// options
   var options = {
     passwordLength,
     upperCase,
@@ -128,7 +132,7 @@ function generatePassword() {
   console.log(userOptions)
   var choosenCharchters = []
   if (userOptions.lowerCase) {
-    choosenCharchters = choosenCharchters.concat(lowerCasedCharacters)
+    choosenCharchters = choosenCharchters.concat(lowerCasedCharacters) 
   }
   if (userOptions.upperCase) {
     choosenCharchters = choosenCharchters.concat(upperCasedCharacters)
